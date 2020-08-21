@@ -1,0 +1,82 @@
+
+.login-wrap .login-title{
+  margin-top: 6px;
+  margin-bottom: 16px;
+  font-size: 20px;
+  color: rgb(51,51,51);
+  text-align: center;/*居中*/
+  
+}
+
+.login-wrap{
+  position: relative;
+  z-index: 5000;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  position: fixed;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+}
+
+
+.login-wrap .close{
+  position: absolute;
+  top:5%;
+  right:5%;
+  cursor: pointer;
+}
+.login-form input{
+
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+
+}
+
+.login-form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #333;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.login-form button:hover,.form button:active,.form button:focus {
+  background: #222;
+}
+
+.login-form .message span{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.login-mask{
+  width:100%;
+	height:100%;
+	background:rgba(0,0,0,.75);
+	position:fixed;
+	z-index:4999;
+	top:0;
+  left:0;
+  overflow: hidden;
+
+}

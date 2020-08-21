@@ -1,0 +1,69 @@
+.meshInfo{
+  z-index: 6000;
+  position: fixed;
+  bottom:10px;
+  left:10px;
+}
+table{
+  margin:10px 20px;
+  width: 450px;
+}
+
+
+table, th, td
+{
+  border: 1px solid #333;
+  text-align: left;
+
+}
+
+.showButton{
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+  background: #333 url(../../static/img/add.svg) no-repeat center;
+  background-size: 60% 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.showButton img{
+  width:60%;
+  height:60%;
+  margin:auto;
+}
+
+.mesh-wrap .mesh-title{
+  margin-top: 6px;
+  margin-bottom: 16px;
+  font-size: 20px;
+  color: rgb(51,51,51);
+  text-align: center;/*居中*/
+}
+
+.mesh-wrap{
+  position: absolute;
+  bottom:50px;
+  left:0px;
+
+
+  background: #FFFFFF;
+  /* max-width: 360px; */
+
+  text-align: right;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+
+.mesh-wrap .close{
+  background-color: #333;
+  color:#fff;
+  height:24px;
+  line-height: 24px;
+}
+
+.close span{
+  padding: 0 10px;
+  cursor: pointer;
+
+}

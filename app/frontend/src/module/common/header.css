@@ -1,0 +1,97 @@
+/* header css */
+.header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #1E1F29;
+    color: #fff;
+    border-bottom: 3px solid #D10024;
+}
+/* container css */
+.container{
+    width:1170px;
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto;
+    display: flex;
+    justify-content: space-between;   
+}
+/* container right css */
+.right{
+    text-align: center;
+    display: flex; 
+
+}
+
+.right div{
+    font-size:12px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+
+    /*color: #2B2D42;*/
+    font-weight: 1000;
+    -webkit-transition: 0.2s color;
+    transition: 0.2s color;
+}
+
+.right div:last-of-type{
+    padding-left:20px;
+
+
+}
+
+.right img{
+    width:30px;
+    padding:0 5px;
+}
+
+
+
+/* navgate css */
+
+.main-nav {
+    margin: 0px;
+    float: none;
+}
+
+.nav{
+    padding-left:0;
+    margin-bottom:0;
+    list-style:none
+}
+.nav>li{
+    text-decoration: none;
+    float:left;
+    position:relative;
+    padding:10px 15px;
+    /*color: #2B2D42;*/
+    font-weight: 1000;
+    -webkit-transition: 0.2s color;
+    transition: 0.2s color;
+    cursor: pointer;
+}
+
+.navbar-nav{
+    margin:7.5px -15px
+}
+.navbar-nav>li{
+    padding-top:10px;
+    padding-bottom:10px;
+    line-height:20px;
+    text-decoration: none;
+}
+
+/* left css */
+.left img{
+    position: relative;
+    top:10px;
+    padding-right:20px;
+    width: 32px;
+}
+
+.left span{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'SimHei';
+}

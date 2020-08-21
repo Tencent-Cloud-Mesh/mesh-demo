@@ -1,0 +1,12 @@
+.loading {
+  position: fixed;
+  top:10%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  z-index: 6 001;
+}
+
+.loading img{
+  width:36px;
+  height: 36px;
+}

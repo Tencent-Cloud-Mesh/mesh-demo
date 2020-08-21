@@ -1,0 +1,10 @@
+{
+  "short_name": "React App",
+  "name": "Create React App Sample",
+  "icons": [
+    {
+      "src": "logo.svg",
+      "type": "svg"
+    }
+  ]
+}

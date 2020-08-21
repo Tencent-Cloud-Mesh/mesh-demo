@@ -1,0 +1,149 @@
+.cart{
+  width:360px;
+  position:fixed;
+  top:0px;
+  bottom:0px;
+  right:0px;
+  background-color: #fff;
+  z-index: 5000;
+}
+
+/* cart header css */
+.cart-header{
+  height:60px;
+  background-color: #333333;
+  display: flex;
+  align-content: center;
+}
+
+.cart-header .left,.cart-header .right{
+  width: 60px;
+}
+.cart-header .left{
+  cursor: pointer;
+}
+.cart-header .left img{
+  width:20px;
+  position: relative;
+  left: 20px;
+  top:18px
+
+}
+
+.cart-header .center{
+  flex:1;
+  color:#fff;
+  text-align: center;
+  line-height: 60px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.cart-header .right div{
+  text-align: center;
+}
+
+/* cart-list css */
+
+
+.shopping-cart-list-item{
+  margin:10px;
+  border-bottom:1px solid #E4E7ED;
+  display: flex;
+}
+
+.shopping-cart-list-item .product-img img{
+  width:90px;
+}
+
+.shopping-cart-list-item .product-info{
+  
+  font-size:14px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding:10px
+}
+
+.shopping-cart-list-item .product-info .name{
+  font-size: 12px;
+  color:#6e6666;
+}
+
+.shopping-cart-list-item .product-info input{
+  height: 16px;
+	width: 16px;
+	font-size: 14px;
+	color: #6f6f6f;
+	width: 50px;
+	border: none;
+	background: #f5f5f5;
+	text-align: center;
+}
+
+.shopping-cart-list-item .product-info input::placeholder{
+  color:#1c1c1c;
+}
+
+.shopping-cart-list-item .product-info .qtybtn {
+  width: 16px;
+	font-size: 16px;
+	color: #6f6f6f;
+	cursor: pointer;
+	display: inline-block;
+}
+
+
+.shopping-cart-list-item .storeWarn{
+  color:rgba(179, 21, 21, 0.4);
+  font-weight: 400;
+  font-size: 12px;
+
+}
+
+/* cart-bottom css */
+
+.cart-bottom{
+  position: absolute;
+  bottom:0px;
+  left:0px;
+  right:0px;
+
+
+  background: #f5f5f5;
+  padding: 30px;
+  padding-top: 20px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.cart-bottom .total-price{
+	color: #1c1c1c;
+	font-weight: 700;
+	font-size: 20px;
+	margin-bottom: 28px;
+}
+
+.cart-bottom .checkout-btn {
+	display: inline-block;
+	font-size: 14px;
+	padding: 10px 28px 10px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 700;
+	background: #333333;
+  letter-spacing: 2px;
+}
+
+.cart-mask{
+  width:100%;
+	height:100%;
+	background:rgba(0,0,0,.75);
+	position:fixed;
+	z-index:4999;
+	top:0;
+  left:0;
+  overflow: hidden;
+
+}
