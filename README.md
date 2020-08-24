@@ -4,11 +4,11 @@ frontend 服务在./app/fronend 文件夹中，基于 react + nginx进行构建
 
 ## 本地运行
 
-### npm install
+`npm install`
 
 下载依赖包node_modules
 
-### `npm run start`
+`npm run start`
 
 本地运行： [http://localhost:3000](http://localhost:3000) 
 
@@ -18,19 +18,18 @@ frontend 服务在./app/fronend 文件夹中，基于 react + nginx进行构建
 
 ## 镜像打包流程
 
-### build the project
 
 `npm run build`: 将 project 打包（build folder）
 
-### docker login --username=${USER_NAME} ccr.ccs.tencentyun.com -p ${PASSWORD}
+`docker login --username=${USER_NAME} ccr.ccs.tencentyun.com -p ${PASSWORD}`
 
 登录镜像仓库
 
-### docker build -t [Registry address]:[image version] . -f [dockerfile]
+`docker build -t [Registry address]:[image version] . -f [dockerfile]`
 
 镜像打包
 
-### docker push [image name]
+`docker push [image name]`
 
 上传镜像
 
