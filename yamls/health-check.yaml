@@ -1,0 +1,121 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: cart
+  namespace: base
+spec:
+  host: cart
+  trafficPolicy:
+    loadBalancer:
+      consistentHash:
+        httpHeaderName: UserID
+    outlierDetection:
+      consecutiveErrors: 5
+      interval: 10000ms
+      baseEjectionTime: 30000ms
+      maxEjectionPercent: 10
+      minHealthPercent: 50
+  exportTo:
+    - '*'
+
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: frontend
+  namespace: base
+spec:
+  host: frontend
+  trafficPolicy:
+    outlierDetection:
+      consecutiveErrors: 5
+      interval: 10000ms
+      baseEjectionTime: 30000ms
+      maxEjectionPercent: 10
+      minHealthPercent: 50
+  exportTo:
+    - '*'
+
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: order
+  namespace: base
+spec:
+  host: order
+  trafficPolicy:
+    outlierDetection:
+      consecutiveErrors: 5
+      interval: 10000ms
+      baseEjectionTime: 30000ms
+      maxEjectionPercent: 10
+      minHealthPercent: 50
+  subsets:
+    - name: v1
+      labels:
+        version: v1
+    - name: v2
+      labels:
+        version: v2
+  exportTo:
+    - '*'
+
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: product
+  namespace: base
+spec:
+  host: product
+  trafficPolicy:
+    outlierDetection:
+      consecutiveErrors: 5
+      interval: 10000ms
+      baseEjectionTime: 30000ms
+      maxEjectionPercent: 10
+      minHealthPercent: 50
+  subsets:
+    - name: v1
+      labels:
+        version: v1
+    - name: v2
+      labels:
+        version: v2
+
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: stock
+  namespace: base
+spec:
+  host: stock
+  trafficPolicy:
+    outlierDetection:
+      consecutiveErrors: 5
+      interval: 10000ms
+      baseEjectionTime: 30000ms
+      maxEjectionPercent: 10
+      minHealthPercent: 50
+  exportTo:
+    - '*'
+
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: user
+  namespace: base
+spec:
+  host: user
+  trafficPolicy:
+    outlierDetection:
+      consecutiveErrors: 5
+      interval: 10000ms
+      baseEjectionTime: 30000ms
+      maxEjectionPercent: 10
+      minHealthPercent: 50
+  exportTo:
+    - '*'

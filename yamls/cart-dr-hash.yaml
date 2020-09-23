@@ -1,0 +1,13 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: cart
+  namespace: base
+spec:
+  host: cart
+  trafficPolicy:
+    loadBalancer:
+      consistentHash:
+        httpHeaderName: UserID
+  exportTo:
+    - '*'

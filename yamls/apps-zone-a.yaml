@@ -1,0 +1,304 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: base
+  labels:
+    istio-injection: enabled
+spec:
+  finalizers:
+    - kubernetes
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+  namespace: base
+  labels:
+    app: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+        - name: frontend
+          image: ccr.ccs.tencentyun.com/chloeyhuang/demo:v202007101540
+          imagePullPolicy: Always
+          env:
+            - name: POD_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            - name: REGION
+              value: "guangzhou-zoneA"
+          ports:
+            - containerPort: 80
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend
+  namespace: base
+  labels:
+    app: frontend
+spec:
+  ports:
+    - port: 80
+      name: http
+  selector:
+    app: frontend
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: product-v1
+  namespace: base
+  labels:
+    app: product
+    version: v1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: product
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: product
+        version: v1
+    spec:
+      containers:
+        - name: product
+          image: ccr.ccs.tencentyun.com/zhulei/testproduct1:v1
+          imagePullPolicy: Always
+          env:
+            - name: POD_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            - name: REGION
+              value: "guangzhou-zoneA"
+          ports:
+            - containerPort: 7000
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: product
+  namespace: base
+  labels:
+    app: product
+spec:
+  ports:
+    - port: 7000
+      name: http
+  selector:
+    app: product
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: user
+  namespace: base
+  labels:
+    app: user
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: user
+  template:
+    metadata:
+      labels:
+        app: user
+    spec:
+      containers:
+        - name: user
+          image: ccr.ccs.tencentyun.com/zhulei/testuser:v1
+          imagePullPolicy: Always
+          env:
+            - name: POD_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            - name: REGION
+              value: "guangzhou-zoneA"
+          ports:
+            - containerPort: 7000
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: user
+  namespace: base
+  labels:
+    app: user
+spec:
+  ports:
+    - port: 7000
+      name: http
+  selector:
+    app: user
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stock
+  namespace: base
+  labels:
+    app: stock
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: stock
+  template:
+    metadata:
+      labels:
+        app: stock
+    spec:
+      containers:
+        - name: stock
+          image: ccr.ccs.tencentyun.com/zhulei/teststock:v1
+          imagePullPolicy: Always
+          env:
+            - name: POD_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            - name: REGION
+              value: "guangzhou-zoneA"
+          ports:
+            - containerPort: 7000
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: stock
+  namespace: base
+  labels:
+    app: stock
+spec:
+  ports:
+    - port: 7000
+      name: http
+  selector:
+    app: stock
+---
+
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cart
+  namespace: base
+  labels:
+    app: cart
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: cart
+  template:
+    metadata:
+      labels:
+        app: cart
+    spec:
+      containers:
+        - name: cart
+          image: ccr.ccs.tencentyun.com/zhulei/testcart:v1
+          imagePullPolicy: Always
+          env:
+            - name: POD_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            - name: REGION
+              value: "guangzhou-zoneA"
+          ports:
+            - containerPort: 7000
+              protocol: TCP
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: cart
+  namespace: base
+  labels:
+    app: cart
+spec:
+  ports:
+    - name: http
+      port: 7000
+      protocol: TCP
+  selector:
+    app: cart
+  type: ClusterIP
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: order-v1
+  namespace: base
+  labels:
+    app: order
+    version: v1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: order
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: order
+        version: v1
+    spec:
+      containers:
+        - name: order
+          image: ccr.ccs.tencentyun.com/zhulei/testorder1:v1
+          imagePullPolicy: Always
+          env:
+            - name: POD_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            - name: REGION
+              value: "guangzhou-zoneA"
+          ports:
+            - containerPort: 7000
+              protocol: TCP
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: order
+  namespace: base
+  labels:
+    app: order
+spec:
+  ports:
+    - name: http
+      port: 7000
+      protocol: TCP
+  selector:
+    app: order
+  type: ClusterIP

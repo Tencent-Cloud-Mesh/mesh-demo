@@ -1,0 +1,25 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: order-vs
+  namespace: base
+spec:
+  hosts:
+    - order.base.svc.cluster.local
+  http:
+    - match:
+        - headers:
+            cookie:
+              exact: vip=false
+      route:
+        - destination:
+            host: order.base.svc.cluster.local
+            subset: v1
+    - match:
+        - headers:
+            cookie:
+              exact: vip=true
+      route:
+        - destination:
+            host: order.base.svc.cluster.local
+            subset: v2

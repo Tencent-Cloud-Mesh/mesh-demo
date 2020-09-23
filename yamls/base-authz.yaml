@@ -1,0 +1,12 @@
+apiVersion: security.istio.io/v1beta1
+kind: AuthorizationPolicy
+metadata:
+  name: base-authz
+  namespace: base
+spec:
+  action: DENY
+  rules:
+    - from:
+        - source:
+            namespaces:
+              - test
