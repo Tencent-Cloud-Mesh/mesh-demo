@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="660px" height="550px" viewBox="0 0 660 550" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>1. Demo架构</title>
+    <g id="1.-Demo架构" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形备份-3" fill="#EAEBEC" fill-rule="nonzero" x="40" y="196" width="130" height="96"></rect>
+        <text id="user" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" line-spacing="14" fill="#444444">
+            <tspan x="50" y="221">user</tspan>
+        </text>
+        <g id="内容方块-单行备份" transform="translate(50.000000, 230.000000)">
+            <rect id="矩形" fill="#BBBBBB" opacity="0.600000024" x="2" y="2" width="108" height="50"></rect>
+            <rect id="矩形备份" stroke="#E5E5E5" fill="#FFFFFF" fill-rule="nonzero" x="0.5" y="0.5" width="107" height="49"></rect>
+            <text id="user" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" line-spacing="14" fill="#444444">
+                <tspan x="40" y="33">user</tspan>
+            </text>
+        </g>
+        <rect id="矩形备份-5" fill="#EAEBEC" fill-rule="nonzero" x="340" y="196" width="130" height="96"></rect>
+        <text id="cart" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" line-spacing="14" fill="#444444">
+            <tspan x="350" y="221">cart</tspan>
+        </text>
+        <g id="内容方块-单行备份-3" transform="translate(350.000000, 230.000000)">
+            <rect id="矩形" fill="#BBBBBB" opacity="0.600000024" x="2" y="2" width="108" height="50"></rect>
+            <rect id="矩形备份" stroke="#E5E5E5" fill="#FFFFFF" fill-rule="nonzero" x="0.5" y="0.5" width="107" height="49"></rect>
+            <text id="cart" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" line-spacing="14" fill="#444444">
+                <tspan x="41" y="33">cart</tspan>
+            </text>
+        </g>
+        <rect id="矩形备份-5" fill="#EAEBEC" fill-rule="nonzero" x="415" y="414" width="130" height="96"></rect>
+        <text id="stock" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" line-spacing="14" fill="#444444">
+            <tspan x="425" y="439">stock</tspan>
+        </text>
+        <g id="内容方块-单行备份-3" transform="translate(425.000000, 448.000000)">
+            <rect id="矩形" fill="#BBBBBB" opacity="0.600000024" x="2" y="2" width="108" height="50"></rect>
+            <rect id="矩形备份" stroke="#E5E5E5" fill="#FFFFFF" fill-rule="nonzero" x="0.5" y="0.5" width="107" height="49"></rect>
+            <text id="stock" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" line-spacing="14" fill="#444444">
+                <tspan x="36" y="33">stock</tspan>
+            </text>
+        </g>
+        <rect id="矩形备份-7" fill="#EAEBEC" fill-rule="nonzero" x="265" y="40" width="130" height="96"></rect>
+        <text id="frontend" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" line-spacing="14" fill="#444444">
+            <tspan x="275" y="65">frontend</tspan>
+        </text>
+        <g id="内容方块-单行备份-4" transform="translate(275.000000, 74.000000)">
+            <rect id="矩形" fill="#BBBBBB" opacity="0.600000024" x="2" y="2" width="108" height="50"></rect>
+            <rect id="矩形备份" stroke="#E5E5E5" fill="#FFFFFF" fill-rule="nonzero" x="0.5" y="0.5" width="107" height="49"></rect>
+            <text id="frontend" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" line-spacing="14" fill="#444444">
+                <tspan x="26" y="33">frontend</tspan>
+            </text>
+        </g>
+        <rect id="矩形备份-4" fill="#EAEBEC" fill-rule="nonzero" x="190" y="196" width="130" height="158"></rect>
+        <text id="product" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" line-spacing="14" fill="#444444">
+            <tspan x="200" y="221">product</tspan>
+        </text>
+        <g id="内容方块-两行备份-2" transform="translate(200.000000, 230.000000)">
+            <rect id="矩形" fill="#BBBBBB" opacity="0.600000024" x="2" y="2" width="108" height="50"></rect>
+            <rect id="矩形备份" stroke="#E5E5E5" fill="#FFFFFF" fill-rule="nonzero" x="0.5" y="0.5" width="107" height="49"></rect>
+            <text id="大文本" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" line-spacing="14" fill="#444444">
+                <tspan x="20" y="23">product v1</tspan>
+            </text>
+            <text id="小文本" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="12" fill="#888888">
+                <tspan x="12" y="43">(无广告banner)</tspan>
+            </text>
+        </g>
+        <g id="内容方块-两行备份-3" transform="translate(200.000000, 292.000000)">
+            <rect id="矩形" fill="#BBBBBB" opacity="0.600000024" x="2" y="2" width="108" height="50"></rect>
+            <rect id="矩形备份" stroke="#E5E5E5" fill="#FFFFFF" fill-rule="nonzero" x="0.5" y="0.5" width="107" height="49"></rect>
+            <text id="大文本" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" line-spacing="14" fill="#444444">
+                <tspan x="19" y="23">product v2</tspan>
+            </text>
+            <text id="小文本" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="12" fill="#888888">
+                <tspan x="12" y="43">(有广告banner)</tspan>
+            </text>
+        </g>
+        <rect id="矩形备份-6" fill="#EAEBEC" fill-rule="nonzero" x="490" y="196" width="130" height="158"></rect>
+        <text id="order" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" line-spacing="14" fill="#444444">
+            <tspan x="500" y="221">order</tspan>
+        </text>
+        <g id="内容方块-两行备份-4" transform="translate(500.000000, 230.000000)">
+            <rect id="矩形" fill="#BBBBBB" opacity="0.600000024" x="2" y="2" width="108" height="50"></rect>
+            <rect id="矩形备份" stroke="#E5E5E5" fill="#FFFFFF" fill-rule="nonzero" x="0.5" y="0.5" width="107" height="49"></rect>
+            <text id="大文本" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" line-spacing="14" fill="#444444">
+                <tspan x="28" y="23">order v1</tspan>
+            </text>
+            <text id="小文本" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="12" fill="#888888">
+                <tspan x="8" y="43">(无积分抵扣系统)</tspan>
+            </text>
+        </g>
+        <g id="内容方块-两行备份-5" transform="translate(500.000000, 292.000000)">
+            <rect id="矩形" fill="#BBBBBB" opacity="0.600000024" x="2" y="2" width="108" height="50"></rect>
+            <rect id="矩形备份" stroke="#E5E5E5" fill="#FFFFFF" fill-rule="nonzero" x="0.5" y="0.5" width="107" height="49"></rect>
+            <text id="大文本" font-family="PingFangSC-Regular, PingFang SC" font-size="14" font-weight="normal" line-spacing="14" fill="#444444">
+                <tspan x="26.5" y="23">order v2</tspan>
+            </text>
+            <text id="小文本" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" line-spacing="12" fill="#888888">
+                <tspan x="8" y="43">(有积分抵扣系统)</tspan>
+            </text>
+        </g>
+        <polyline id="路径备份" stroke="#888888" transform="translate(480.000000, 338.000000) scale(1, -1) rotate(180.000000) translate(-480.000000, -338.000000) " points="405 354 405 384 555 384 555 292"></polyline>
+        <g id="编组-3备份-5" transform="translate(480.000000, 399.000000) rotate(-180.000000) translate(-480.000000, -399.000000) translate(475.000000, 384.000000)">
+            <line x1="5" y1="30" x2="5" y2="2" id="路径" stroke="#888888"></line>
+            <polygon id="路径" fill="#888888" points="10 6 5 0 0 6"></polygon>
+        </g>
+        <g id="编组" transform="translate(100.000000, 136.000000)">
+            <polygon id="路径备份-4" fill="#888888" transform="translate(5.000000, 57.000000) rotate(-180.000000) translate(-5.000000, -57.000000) " points="10 60 5 54 0 60"></polygon>
+            <polygon id="路径" fill="#888888" transform="translate(305.000000, 57.000000) rotate(-180.000000) translate(-305.000000, -57.000000) " points="310 60 305 54 300 60"></polygon>
+            <polygon id="路径备份-5" fill="#888888" transform="translate(455.000000, 57.000000) rotate(-180.000000) translate(-455.000000, -57.000000) " points="460 60 455 54 450 60"></polygon>
+            <polygon id="路径" fill="#888888" transform="translate(155.000000, 57.000000) rotate(-180.000000) translate(-155.000000, -57.000000) " points="160 60 155 54 150 60"></polygon>
+            <polyline id="路径备份-2" stroke="#888888" transform="translate(102.500000, 29.000000) rotate(-180.000000) translate(-102.500000, -29.000000) " points="5 58 5 38 200 38 200 2.56032348e-12"></polyline>
+            <polyline id="路径备份-8" stroke="#888888" transform="translate(357.500000, 29.000000) scale(-1, 1) rotate(-180.000000) translate(-357.500000, -29.000000) " points="260 58 260 38 455 38 455 2.56032348e-12"></polyline>
+            <polyline id="路径备份-6" stroke="#888888" transform="translate(187.500000, 29.000000) rotate(-180.000000) translate(-187.500000, -29.000000) " points="155 58 155 18 220 18 220 1.85402735e-12"></polyline>
+            <polyline id="路径备份-7" stroke="#888888" transform="translate(272.500000, 29.000000) scale(-1, 1) rotate(-180.000000) translate(-272.500000, -29.000000) " points="240 58 240 18 305 18 305 1.85402735e-12"></polyline>
+        </g>
+    </g>
+</svg>
