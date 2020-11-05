@@ -3,7 +3,7 @@ kind: Namespace
 metadata:
   name: base
   labels:
-    istio-injection: enabled
+  istio.io/rev: 1-6-9
 spec:
   finalizers:
     - kubernetes
