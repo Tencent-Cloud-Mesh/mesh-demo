@@ -1,3 +1,5 @@
+# initial demo apps
+
 apiVersion: v1
 kind: Namespace
 metadata:
@@ -86,7 +88,7 @@ spec:
                 fieldRef:
                   fieldPath: metadata.name
             - name: REGION
-              value: "guangzhou-zoneA"
+              value: "bj-zonguangzhou-zoneAe2"
           ports:
             - containerPort: 7000
 ---

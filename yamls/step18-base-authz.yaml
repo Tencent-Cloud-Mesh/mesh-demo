@@ -1,3 +1,5 @@
+# services in base namespace cannot be visited by services in test namespace
+
 apiVersion: security.istio.io/v1beta1
 kind: AuthorizationPolicy
 metadata:

@@ -1,3 +1,4 @@
+# listener and routing settings of cluster 2 in anther availability zone
 apiVersion: networking.istio.io/v1alpha3
 kind: Gateway
 metadata:

@@ -1,3 +1,5 @@
+# routing settings of 2 subsets of order service
+
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
@@ -15,7 +17,6 @@ spec:
         - destination:
             host: order.base.svc.cluster.local
             subset: v1
-      timeout: 3000ms
     - match:
         - headers:
             cookie:
@@ -24,4 +25,3 @@ spec:
         - destination:
             host: order.base.svc.cluster.local
             subset: v2
-      timeout: 3000ms

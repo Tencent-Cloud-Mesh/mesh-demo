@@ -1,3 +1,5 @@
+# connection pool settings to limit concurrent requests
+
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
 metadata:
