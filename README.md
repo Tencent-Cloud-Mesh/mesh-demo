@@ -16,7 +16,7 @@
     <img src="assets/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">mesh demo</h3>
+<h3 align="center">MESH DEMO</h3>
 
   <p align="center">
     A demo helps you have a quick start to Tencent Cloud Mesh
@@ -66,12 +66,12 @@ This repo contains the source code of apps and the yamls of kubernetes, which ca
 
 ### Built With
 
-* [Golang](https://nextjs.org/)
-* [Docker](https://angular.io/)
-* [Docker-Compose](https://svelte.dev/)
-* [Python](https://laravel.com)
+* [Golang](https://go.dev/)
+* [Docker](https://www.docker.com/)
+* [Docker-Compose](https://docs.docker.com/compose/)
+* [Python](https://www.python.org/)
 * [React.js](https://reactjs.org/)
-* [Nginx](https://vuejs.org/)
+* [Nginx](https://www.nginx.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -112,9 +112,7 @@ In this way, you just need to copy the yaml to the web console in TKE.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more details, please refer to the [Documentation](https://tencent-cloud-mesh.github.io/meshdemotutorial.github.io/)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -122,11 +120,6 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <!-- ROADMAP -->
 ## Roadmap
-
-- [] Feature 1
-- [] Feature 2
-- [] Feature 3
-    - [] Nested Feature
 
 See the [open issues](https://github.com/Tencent-Cloud-Mesh/mesh-demo/issues) for a full list of proposed features (and known issues).
 
@@ -173,9 +166,10 @@ Project Link: [https://github.com/Tencent-Cloud-Mesh/mesh-demo](https://github.c
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* [istio](https://istio.io/)
+* [TCM](https://cloud.tencent.com/product/tcm)
+* [TKE](https://cloud.tencent.com/product/tke)
+* [Tencent Cloud](https://cloud.tencent.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
