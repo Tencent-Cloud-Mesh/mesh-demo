@@ -1,28 +1,198 @@
-# Tencent Cloud Mesh Demo
+<div id="top"></div>
 
-![Demo界面](1-2-2.png)
 
-## Demo概览
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+<!-- [![Apache License][license-shield]][license-url] -->
 
-Demo是一个电商网站，由6个服务组成：
 
-- frontend：网站前端，调用user、product、cart、order服务
-- product：商品服务，提供商品信息
-两个版本，版本一没有顶部广告banner；版本二有顶部广告banner
-- user：用户登陆服务，提供登陆功能
-- cart：购物车服务，提供添加、查看购物车功能，调用库存服务提供库存告警功能，需要登陆才可以下单
-- order：订单结算服务，登陆后点击checkout后可发起结算，结算时需要调用stock库存服务查询库存情况，库存不足会下单失败
-两个版本，版本一无积分抵扣运费的功能，版本二有积分抵扣运费的功能
-- stock：库存服务，为order购物车服务的库存告警功能和order订单结算服务的库存查询提供库存信息
 
-![Demo结构](1-2-1.svg)
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/Tencent-Cloud-Mesh/mesh-demo">
+    <img src="assets/images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-服务使用了多种开发语言，模拟跨团队协作多语言的开发场景。
+<h3 align="center">mesh demo</h3>
 
-## Demo部署
+  <p align="center">
+    A demo helps you have a quick start to Tencent Cloud Mesh
+  </p>
+</div>
 
-当前demo已经完成构建与镜像打包，部署至Kubernetes集群的Deployment yaml文件已经归档至`/yamls`文件夹，初始部署的app Deployment yaml文件是：`/yamls/apps-zone-a.yaml`。每个服务的代码已经归档至`/app`文件夹。
 
-部署完成后，您可以根据[教程文档](https://tencent-cloud-mesh.github.io/meshdemotutorial.github.io/)体验腾讯云服务网格在变更发布，可观测性，分布式高可用架构，安全隔离场景中的功能。
 
-体验过程中涉及到的配置yaml文件也已经归档至`/yamls`文件夹，或可以直接从教程代码块中复制获取。
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+<img src="assets/images/preview.png" alt="Preview" width="100%">
+
+This repo contains the source code of apps and the yamls of kubernetes, which can help you have a quick start to TCM.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+### Built With
+
+* [Golang](https://nextjs.org/)
+* [Docker](https://angular.io/)
+* [Docker-Compose](https://svelte.dev/)
+* [Python](https://laravel.com)
+* [React.js](https://reactjs.org/)
+* [Nginx](https://vuejs.org/)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+Here is a startup yaml config of tcm demo, please check it out [here](yamls/step01-apps-zone-a.yaml). 
+
+Notice that change to the correct branch or tag according to your istio version!
+
+For example, if you want to use the `latest version` of istio supported in Tencent Cloud Mesh, you can just use the yamls in master branch. And if you want to use `istio 1.8.1`, please use the yamls in the `branch 1.8.1` or in the `tag 1.8.1`.
+
+### Prerequisites
+
+You should have a TKE cluster before everything, please check it out [Here](https://cloud.tencent.com/product/tke)
+
+### Installation
+
+#### Use kubectl
++ Use kubectl to Login to the TKE cluster
++ Use kubectl to submit yaml to cluster
+```bash
+  kubectl apply -f yamls/step01-apps-zone-a.yaml
+```
+#### Use Web Console in TKE
+In this way, you just need to copy the yaml to the web console in TKE.
+
+<div align="center">
+<img src="assets/images/console.png"  alt="Console" width="50%">
+</div>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+
+_For more examples, please refer to the [Documentation](https://example.com)_
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- ROADMAP -->
+## Roadmap
+
+- [] Feature 1
+- [] Feature 2
+- [] Feature 3
+    - [] Nested Feature
+
+See the [open issues](https://github.com/Tencent-Cloud-Mesh/mesh-demo/issues) for a full list of proposed features (and known issues).
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the Apache 2.0 License. See `LICENSE` for more information.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Project Link: [https://github.com/Tencent-Cloud-Mesh/mesh-demo](https://github.com/Tencent-Cloud-Mesh/mesh-demo)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+
+* []()
+* []()
+* []()
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/Tencent-Cloud-Mesh/mesh-demo.svg?style=for-the-badge
+[contributors-url]: https://github.com/Tencent-Cloud-Mesh/mesh-demo/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Tencent-Cloud-Mesh/mesh-demo.svg?style=for-the-badge
+[forks-url]: https://github.com/Tencent-Cloud-Mesh/mesh-demo/network/members
+[stars-shield]: https://img.shields.io/github/stars/Tencent-Cloud-Mesh/mesh-demo.svg?style=for-the-badge
+[stars-url]: https://github.com/Tencent-Cloud-Mesh/mesh-demo/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Tencent-Cloud-Mesh/mesh-demo.svg?style=for-the-badge
+[issues-url]: https://github.com/Tencent-Cloud-Mesh/mesh-demo/issues
+<!-- [license-shield]: https://img.shields.io/badge/License-Apache%202.0-blue.svg
+[license-url]: https://github.com/Tencent-Cloud-Mesh/mesh-demo/LICENSE
+[linkedin-shield]: https://img.shields.io/badge/License-Apache%202.0-blue.svg
+[linkedin-url]: https://linkedin.com/in/linkedin_username
+[product-screenshot]: images/screenshot.png -->
