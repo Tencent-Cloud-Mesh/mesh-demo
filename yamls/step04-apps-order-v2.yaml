@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: order
-          image: ccr.ccs.tencentyun.com/zhulei/testorder2:v1
+          image: ccr.ccs.tencentyun.com/bitliu/order:v2
           imagePullPolicy: Always
           env:
             - name: POD_NAME

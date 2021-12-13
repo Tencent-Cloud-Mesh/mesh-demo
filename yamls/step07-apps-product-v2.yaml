@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: product
-          image: ccr.ccs.tencentyun.com/zhulei/testproduct2:v1
+          image: ccr.ccs.tencentyun.com/zhulei/product:v2
           imagePullPolicy: Always
           env:
             - name: POD_NAME
