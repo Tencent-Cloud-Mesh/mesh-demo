@@ -101,9 +101,19 @@ You should have a TKE cluster before everything, please check it out [Here](http
 #### Use Web Console in TKE
 In this way, you just need to copy the yaml to the web console in TKE.
 
-<div align="center">
-<img src="assets/images/console.png"  alt="Console" width="50%">
-</div>
+1. Get a free API Key at [https://example.com](https://example.com)
+2. Clone the repo
+   ```sh
+   git clone https://github.com/Tencent-Cloud-Mesh/mesh-demo.git
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Enter your API in `config.js`
+   ```js
+   const API_KEY = 'ENTER YOUR API';
+   ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -155,7 +165,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the Apache 2.0 License. See `LICENSE` for more information.
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -163,6 +173,8 @@ Distributed under the Apache 2.0 License. See `LICENSE` for more information.
 
 <!-- CONTACT -->
 ## Contact
+
+Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
 
 Project Link: [https://github.com/Tencent-Cloud-Mesh/mesh-demo](https://github.com/Tencent-Cloud-Mesh/mesh-demo)
 
