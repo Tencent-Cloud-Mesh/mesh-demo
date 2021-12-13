@@ -60,8 +60,6 @@
 
 This repo contains the source code of apps and the yamls of kubernetes, which can help you have a quick start to TCM.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 ### Built With
@@ -72,8 +70,6 @@ This repo contains the source code of apps and the yamls of kubernetes, which ca
 * [Python](https://www.python.org/)
 * [React.js](https://reactjs.org/)
 * [Nginx](https://www.nginx.com/)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
@@ -98,23 +94,21 @@ You should have a TKE cluster before everything, please check it out [Here](http
 ```bash
   kubectl apply -f yamls/step01-apps-zone-a.yaml
 ```
-#### Use Web Console in TKE
+<!-- #### Use Web Console in TKE
 In this way, you just need to copy the yaml to the web console in TKE.
 
 <div align="center">
 <img src="assets/images/console.png"  alt="Console" width="50%">
 </div>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">back to top</a>)</p> -->
 
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-_For more details, please refer to the [Documentation](https://tencent-cloud-mesh.github.io/meshdemotutorial.github.io/)_
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+For more details, please refer to the [Documentation](https://tencent-cloud-mesh.github.io/meshdemotutorial.github.io/)
 
 
 
@@ -123,7 +117,6 @@ _For more details, please refer to the [Documentation](https://tencent-cloud-mes
 
 See the [open issues](https://github.com/Tencent-Cloud-Mesh/mesh-demo/issues) for a full list of proposed features (and known issues).
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
@@ -141,8 +134,6 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- LICENSE -->
@@ -150,17 +141,11 @@ Don't forget to give the project a star! Thanks again!
 
 Distributed under the Apache 2.0 License. See `LICENSE` for more information.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- CONTACT -->
 ## Contact
 
 Project Link: [https://github.com/Tencent-Cloud-Mesh/mesh-demo](https://github.com/Tencent-Cloud-Mesh/mesh-demo)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- ACKNOWLEDGMENTS -->
@@ -170,9 +155,6 @@ Project Link: [https://github.com/Tencent-Cloud-Mesh/mesh-demo](https://github.c
 * [TCM](https://cloud.tencent.com/product/tcm)
 * [TKE](https://cloud.tencent.com/product/tke)
 * [Tencent Cloud](https://cloud.tencent.com/)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
