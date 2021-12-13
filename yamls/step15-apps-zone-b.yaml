@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: ccr.ccs.tencentyun.com/chloeyhuang/demo:v202007101540
+          image: ccr.ccs.tencentyun.com/bitliu/frontend:v1
           imagePullPolicy: Always
           env:
             - name: POD_NAME
@@ -79,7 +79,7 @@ spec:
     spec:
       containers:
         - name: product
-          image: ccr.ccs.tencentyun.com/zhulei/testproduct1:v1
+          image: ccr.ccs.tencentyun.com/bitliu/product:v1
           imagePullPolicy: Always
           env:
             - name: POD_NAME
@@ -114,7 +114,7 @@ spec:
     spec:
       containers:
         - name: product
-          image: ccr.ccs.tencentyun.com/zhulei/testproduct2:v1
+          image: ccr.ccs.tencentyun.com/bitliu/product:v2
           imagePullPolicy: Always
           env:
             - name: POD_NAME
@@ -161,7 +161,7 @@ spec:
     spec:
       containers:
         - name: user
-          image: ccr.ccs.tencentyun.com/zhulei/testuser:v1
+          image: ccr.ccs.tencentyun.com/bitliu/user:v1
           imagePullPolicy: Always
           env:
             - name: POD_NAME
@@ -208,7 +208,7 @@ spec:
     spec:
       containers:
         - name: stock
-          image: ccr.ccs.tencentyun.com/zhulei/teststock:v1
+          image: ccr.ccs.tencentyun.com/bitliu/stock:v1
           imagePullPolicy: Always
           env:
             - name: POD_NAME
@@ -256,7 +256,7 @@ spec:
     spec:
       containers:
         - name: cart
-          image: ccr.ccs.tencentyun.com/zhulei/testcart:v1
+          image: ccr.ccs.tencentyun.com/bitliu/cart:v1
           imagePullPolicy: Always
           env:
             - name: POD_NAME
@@ -309,7 +309,7 @@ spec:
     spec:
       containers:
         - name: order
-          image: ccr.ccs.tencentyun.com/zhulei/testorder1:v1
+          image: ccr.ccs.tencentyun.com/bitliu/order:v1
           imagePullPolicy: Always
           env:
             - name: POD_NAME
@@ -345,7 +345,7 @@ spec:
     spec:
       containers:
         - name: order
-          image: ccr.ccs.tencentyun.com/zhulei/testorder2:v1
+          image: ccr.ccs.tencentyun.com/bitliu/order:v2
           imagePullPolicy: Always
           env:
             - name: POD_NAME
