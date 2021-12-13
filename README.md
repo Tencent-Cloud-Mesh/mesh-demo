@@ -76,7 +76,7 @@ This repo contains the source code of apps and the yamls of kubernetes, which ca
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Here is a startup yaml config of tcm demo, please check it out [here](yamls/step01-apps-zone-a.yaml). 
+Here is a startup yaml config of tcm demo, please check it out [Here](yamls/step01-apps-zone-a.yaml). 
 
 Notice that change to the correct branch or tag according to your istio version!
 
@@ -108,7 +108,7 @@ In this way, you just need to copy the yaml to the web console in TKE.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-For more details, please refer to the [Documentation](https://tencent-cloud-mesh.github.io/meshdemotutorial.github.io/)
+For more details, please refer to the [Documentation](https://tcmesh.netlify.app/)
 
 
 
