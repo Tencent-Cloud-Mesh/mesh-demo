@@ -64,6 +64,8 @@ This repo contains the source code of apps and the yamls of kubernetes, which ca
 
 ### Built With
 
+<img src="assets/images/1-2-1.svg" alt="architect" width="100%">
+
 * [Golang](https://go.dev/)
 * [Docker](https://www.docker.com/)
 * [Docker-Compose](https://docs.docker.com/compose/)
@@ -78,9 +80,11 @@ This repo contains the source code of apps and the yamls of kubernetes, which ca
 
 Here is a startup yaml config of tcm demo, please check it out [Here](yamls/step01-apps-zone-a.yaml). 
 
-Notice that change to the correct branch or tag according to your istio version!
+Remember to change to the correct branch or tag according to your istio version!
 
-For example, if you want to use the `latest version` of istio supported in Tencent Cloud Mesh, you can just use the yamls in master branch. And if you want to use `istio 1.8.1`, please use the yamls in the `branch 1.8.1` or in the `tag 1.8.1`.
+For example, if you want to use the `latest version` of istio supported in Tencent Cloud Mesh, you can just use the yamls in `master branch`. 
+
+And if you want to use `istio 1.8.1`, please use the yamls in the `branch 1.8.1` or in the `tag 1.8.1`.
 
 ### Prerequisites
 
