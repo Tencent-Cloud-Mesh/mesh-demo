@@ -61,10 +61,11 @@
 This repo contains the source code of apps and the yamls of kubernetes, which can help you have a quick start to TCM.
 
 
-
-### Built With
+### Architecture
 
 <img src="assets/images/1-2-1.svg" alt="architect" width="100%">
+
+#### Built with
 
 * [Golang](https://go.dev/)
 * [Docker](https://www.docker.com/)
