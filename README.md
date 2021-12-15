@@ -84,9 +84,9 @@ Here is a startup yaml config of tcm demo, please check it out [Here](yamls/step
 
 Remember to change to the correct branch or tag according to your istio version!
 
-For example, if you want to use the `latest version` of istio supported in Tencent Cloud Mesh, you can just use the yamls in `master branch`. 
+For example, if you want to use the `latest version` of istio supported in Tencent Cloud Mesh, you can just use the yamls in [master branch](https://github.com/Tencent-Cloud-Mesh/mesh-demo/tree/master). 
 
-And if you want to use `istio 1.8.1`, please use the yamls in the `branch 1.8.1` or in the `tag 1.8.1`.
+And if you want to use `istio 1.8.1`, please use the yamls in the [branch 1.8.1](https://github.com/Tencent-Cloud-Mesh/mesh-demo/tree/1.8.1) or in the [tag 1.8.1](https://github.com/Tencent-Cloud-Mesh/mesh-demo/releases/tag/1.8.1).
 
 ### Prerequisites
 
