@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: product
-          image: ccr.ccs.tencentyun.com/bitliu/product:v2
+          image: ccr.ccs.tencentyun.com/tcmesh/product:v2
           imagePullPolicy: Always
           env:
             - name: POD_NAME
