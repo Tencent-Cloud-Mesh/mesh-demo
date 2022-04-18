@@ -90,7 +90,7 @@ And if you want to use `istio 1.8.1`, please use the yamls in the [branch 1.8.1]
 
 ### Prerequisites
 
-You should have a TKE cluster before everything, please check it out [Here](https://cloud.tencent.com/product/tke)
+You should have a TKE cluster before everything, please check it [Here](https://cloud.tencent.com/product/tke)
 
 ### Installation
 
