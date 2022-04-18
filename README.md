@@ -59,7 +59,7 @@
 
 <img src="assets/images/preview.png" alt="Preview" width="100%">
 
-This repo contains the source code of apps and the yamls of kubernetes, which can help you have a quick start to TCM.
+This repo contains the source codes of apps and the yamls of kubernetes, which can help you have a quick start to TCM.
 
 
 ### Architecture
