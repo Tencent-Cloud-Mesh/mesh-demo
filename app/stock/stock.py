@@ -18,7 +18,7 @@ class Server(BaseHTTPRequestHandler):
         headers = self.headers.get('Pids')
 
         pids = []
-        if headers != "":
+        if headers is not None and headers != "":
             for pid in headers.split(','):
                 pids.append(int(pid))
 
