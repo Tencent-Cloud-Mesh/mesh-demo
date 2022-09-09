@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: ccr.ccs.tencentyun.com/tcmesh/frontend:v1
+          image: ccr.ccs.tencentyun.com/tcm-demo/frontend:v1
           imagePullPolicy: Always
           env:
             - name: POD_NAME
@@ -79,7 +79,7 @@ spec:
     spec:
       containers:
         - name: product
-          image: ccr.ccs.tencentyun.com/tcmesh/product:v1
+          image: ccr.ccs.tencentyun.com/tcm-demo/product:v1
           imagePullPolicy: Always
           env:
             - name: POD_NAME
@@ -114,7 +114,7 @@ spec:
     spec:
       containers:
         - name: product
-          image: ccr.ccs.tencentyun.com/tcmesh/product:v2
+          image: ccr.ccs.tencentyun.com/tcm-demo/product:v2
           imagePullPolicy: Always
           env:
             - name: POD_NAME
@@ -161,7 +161,7 @@ spec:
     spec:
       containers:
         - name: user
-          image: ccr.ccs.tencentyun.com/tcmesh/user:v1
+          image: ccr.ccs.tencentyun.com/tcm-demo/user:v1
           imagePullPolicy: Always
           env:
             - name: POD_NAME
@@ -208,7 +208,7 @@ spec:
     spec:
       containers:
         - name: stock
-          image: ccr.ccs.tencentyun.com/tcmesh/stock:v1
+          image: ccr.ccs.tencentyun.com/tcm-demo/stock:v1
           imagePullPolicy: Always
           env:
             - name: POD_NAME
@@ -256,7 +256,7 @@ spec:
     spec:
       containers:
         - name: cart
-          image: ccr.ccs.tencentyun.com/tcmesh/cart:v1
+          image: ccr.ccs.tencentyun.com/tcm-demo/cart:v1
           imagePullPolicy: Always
           env:
             - name: POD_NAME
@@ -309,7 +309,7 @@ spec:
     spec:
       containers:
         - name: order
-          image: ccr.ccs.tencentyun.com/tcmesh/order:v1
+          image: ccr.ccs.tencentyun.com/tcm-demo/order:v1
           imagePullPolicy: Always
           env:
             - name: POD_NAME
@@ -345,7 +345,7 @@ spec:
     spec:
       containers:
         - name: order
-          image: ccr.ccs.tencentyun.com/tcmesh/order:v2
+          image: ccr.ccs.tencentyun.com/tcm-demo/order:v2
           imagePullPolicy: Always
           env:
             - name: POD_NAME

@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: order
-          image: ccr.ccs.tencentyun.com/tcmesh/order:v2
+          image: ccr.ccs.tencentyun.com/tcm-demo/order:v2
           imagePullPolicy: Always
           env:
             - name: POD_NAME

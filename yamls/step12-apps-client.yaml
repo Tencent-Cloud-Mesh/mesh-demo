@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
         - name: client
-          image: ccr.ccs.tencentyun.com/tcmesh/client:v1
+          image: ccr.ccs.tencentyun.com/tcm-demo/client:v1
           imagePullPolicy: Always
           env:
             - name: POD_NAME
